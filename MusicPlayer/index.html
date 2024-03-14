@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,500;1,500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Music Player</title>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="music-player">
+    <div class="player-info">
+      <img class="album-cover" src="album.jpg" alt="Album Cover" style="width: 15%; height: auto;">
+      <div class="song-details">
+        <h2 class="song-title" id="songTitle">Title</h2>
+        <p class="artist">Exstacy</p>
+      </div>
+    </div>
+    <audio id="audio" controls>
+      <source src="" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="controls">
+      <button class="previous" id="previous">Previous</button>
+      <button class="playpause" id="playPause">Play</button>
+      <button class="next" id="next">Next</button>
+      <button class="shuffle" id="shuffle">Shuffle</button>
+      <button class="add" id="addPlaylist">Add to Playlist</button>
+    </div>
+    <div class="playlist">
+      <h2>Playlist</h2>
+      <ul id="playlist"></ul>
+      <button id="savePlaylist">Save Playlist</button>
+      <button id="clearPlaylist">Clear Playlist</button>
+    </div>
+    <div class="library">
+      <h2 id="lib">Music Library</h2>
+      <div id="musicLibrary" class="music-library"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
